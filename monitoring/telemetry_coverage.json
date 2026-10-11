@@ -1,0 +1,15 @@
+{
+  "official_start_epoch": 1784302323.9155927,
+  "official_end_epoch": 1784302376.6614878,
+  "official_duration_seconds": 52.745892150000145,
+  "sample_count": 84,
+  "first_sample_epoch": 1784302323.9105818,
+  "last_sample_epoch": 1784302376.571528,
+  "raw_samples_cover_exact_window": false,
+  "start_boundary_extension_seconds": 0.0,
+  "end_boundary_extension_seconds": 0.08995985984802246,
+  "total_boundary_extension_seconds": 0.08995985984802246,
+  "boundary_extension_limit_seconds": 0.5,
+  "covers_official_window_with_documented_boundary_extension": true,
+  "integration_note": "No sample invented; nearest measured boundary power is held only across a gap at most one 0.5-second polling interval."
+}

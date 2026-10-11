@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "source_model_sha256": "6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54",
+  "onnx_sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c",
+  "expected_source_model_sha256": "6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54",
+  "expected_onnx_sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c"
+}

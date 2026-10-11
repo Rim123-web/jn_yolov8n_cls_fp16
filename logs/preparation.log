@@ -1,0 +1,9 @@
+PREPARATION PASS
+RUN=/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948
+SELECTED_SOURCE_MODEL=/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313/model/yolov8n_cls_inference_only.pt
+SOURCE_MODEL_SHA256=6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54
+EXACT_FP32_REFERENCE_ONNX=/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313/onnx/yolov8n_cls_source.onnx
+ORIGINAL_ONNX_SHA256=341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c
+INPUT=[1,3,640,640] OUTPUT=[1,3] CLASSES=3
+SELECTION_EVIDENCE=trusted three-class checkpoint and identical historical model/ONNX hashes
+DATASET=/home/jetson/Downloads/classification_jetson/test_imgs IMAGES=261

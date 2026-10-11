@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "fp32_reference_package": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313",
+  "final_validation_status": "PASS",
+  "reference_files_verified": 16,
+  "source_model_expected_sha256": "6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54",
+  "onnx_expected_sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c",
+  "precision_variable": "TensorRT builder FP16 flag only",
+  "fp32_package_read_only": true
+}

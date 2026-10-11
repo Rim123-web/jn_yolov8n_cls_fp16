@@ -1,0 +1,19 @@
+precision,stage,mean_latency_ms
+FP32,normalization/layout,154.11391086206896
+FP32,file decoding,36.05523845210728
+FP32,TensorRT inference,32.63509513591898
+FP32,resize/crop,24.343204471264368
+FP32,H2D,4.122717934093256
+FP32,pipeline overhead,2.1691902341212277
+FP32,color conversion,2.148148034482759
+FP32,postprocessing,1.3329718084291189
+FP32,D2H,0.3503508184718903
+FP16-enabled,normalization/layout,119.2930151762452
+FP16-enabled,file decoding,32.86653361302682
+FP16-enabled,TensorRT inference,22.81140761539854
+FP16-enabled,resize/crop,19.717912264367815
+FP16-enabled,H2D,2.6399622520724475
+FP16-enabled,pipeline overhead,1.8364365460700105
+FP16-enabled,color conversion,1.2866943103448276
+FP16-enabled,postprocessing,0.8882018352490422
+FP16-enabled,D2H,0.24727529527127057

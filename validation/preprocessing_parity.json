@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "sample_count": 20,
+  "sampling": "20 evenly spaced deterministic images",
+  "reference": "ultralytics 8.4.47 classify_transforms(size=640)",
+  "fp32_reference_package": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313",
+  "fp32_function_ast_parity": true,
+  "maximum_absolute_difference": 0.0,
+  "mean_absolute_difference": 0.0,
+  "duration_seconds": 5.655327005999425
+}

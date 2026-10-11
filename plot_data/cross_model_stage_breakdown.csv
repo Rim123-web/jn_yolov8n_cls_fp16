@@ -1,0 +1,28 @@
+architecture,stage,mean_latency_ms
+ResNet50,TensorRT FP16 inference,187.14831852821555
+ResNet50,normalization/layout,37.52451167816092
+ResNet50,file decoding,25.335362222222223
+ResNet50,resize/crop,17.62752088888889
+ResNet50,H2D,2.558063368230944
+ResNet50,color conversion,1.3164769770114944
+ResNet50,pipeline overhead,1.1520173136296377
+ResNet50,postprocessing,0.4607385632183908
+ResNet50,D2H,0.24015864432999914
+MobileNetV3-Small,normalization/layout,38.883655908045974
+MobileNetV3-Small,TensorRT FP16 inference,27.178162899967354
+MobileNetV3-Small,file decoding,24.31016059770115
+MobileNetV3-Small,resize/crop,18.15862566283525
+MobileNetV3-Small,H2D,2.5765876094043483
+MobileNetV3-Small,pipeline overhead,1.393843210542274
+MobileNetV3-Small,color conversion,1.3689546704980844
+MobileNetV3-Small,postprocessing,0.44997470881226054
+MobileNetV3-Small,D2H,0.24356799272970223
+YOLOv8n-cls,normalization/layout,119.2930151762452
+YOLOv8n-cls,file decoding,32.86653361302682
+YOLOv8n-cls,TensorRT inference,22.81140761539854
+YOLOv8n-cls,resize/crop,19.717912264367815
+YOLOv8n-cls,H2D,2.6399622520724475
+YOLOv8n-cls,pipeline overhead,1.8364365460700105
+YOLOv8n-cls,color conversion,1.2866943103448276
+YOLOv8n-cls,postprocessing,0.8882018352490422
+YOLOv8n-cls,D2H,0.24727529527127057

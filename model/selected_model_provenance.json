@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "architecture": "YOLOv8n-cls",
+  "selected_source_model": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313/model/yolov8n_cls_inference_only.pt",
+  "source_format": "Ultralytics .pt checkpoint",
+  "source_sha256": "6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54",
+  "provenance_linked_onnx": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313/onnx/yolov8n_cls_source.onnx",
+  "onnx_sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c",
+  "selection_reason": "Exact checkpoint and exact validated static ONNX copied from the final PASS FP32 package; required hashes match the FP16 protocol checkpoints.",
+  "confidence": "HIGH",
+  "original_checkpoint_unchanged": true,
+  "original_onnx_unchanged": true
+}

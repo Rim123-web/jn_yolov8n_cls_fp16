@@ -1,0 +1,6 @@
+TensorRT FP16-enabled execution
+Layer inspector: UNAVAILABLE_WITH_DOCUMENTED_LIMITATION
+Layer rows exposed: 0
+FP16 layers identified: 0
+FP32 fallback layers identified: 0
+Accurate limitation: TensorRT may retain FP32 layers; no pure/all-layer FP16 claim is made.

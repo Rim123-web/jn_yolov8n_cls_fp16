@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "fp32_reference": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313",
+  "current_count": 261,
+  "reference_count": 261,
+  "ordered_hash_and_path_match": true
+}

@@ -1,0 +1,17 @@
+# Workflow Duration
+
+- Dataset and model preparation: NA s (Completed before instrumentation; no value inferred.)
+- ONNX export: 0.0 s (No export: exact validated FP32 ONNX reused byte-for-byte.)
+- TensorRT engine build: 466.0851755142212 s (Fresh FP16-enabled build.)
+- Correctness validation: 137.8733034133911 s (20-image source, FP32 engine, and FP16 engine validation.)
+- Idle power capture: 30.0 s (Warm-up excluded.)
+- Official measured benchmark: 52.745892150000145 s (261 images exactly once.)
+- Metric generation: 0.08212677700066706 s (Offline from saved predictions.)
+- Performance statistics: 0.2608679059994756 s (Offline from saved timings.)
+- Telemetry and energy analysis: 0.008214662000682438 s (Offline from saved telemetry.)
+- Bottleneck analysis: 0.13068656099858345 s (Offline from saved timings.)
+- Cross-model comparison: 0.2830107070003578 s (Offline from validated reference packages.)
+- Figure generation: 80.71595169200009 s (PNG/SVG/PDF plus plotted CSV.)
+- Report generation: 0.1893438499973854 s (Updated after report generation.)
+- Packaging: 4.58 s (Measured full-package tar.gz timing probe before immutable final archive creation.)
+- Transfer and local verification: RECORDED_IN_EXTERNAL_TRANSFER_VERIFICATION s (Exact final transfer duration is necessarily recorded beside the archive after transfer; no value was guessed inside the pre-transfer archive.)

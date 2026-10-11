@@ -1,0 +1,2 @@
+8f80cbba826ee78593ed1ce389e2f3cb88d92335dd87e33e5721ffbab81a2836  /home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948.tar.gz
+/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948.tar.gz

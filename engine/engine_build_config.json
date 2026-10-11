@@ -1,0 +1,30 @@
+{
+  "builder": "/usr/src/tensorrt/bin/trtexec",
+  "source_onnx": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/onnx/yolov8n_cls_source.onnx",
+  "output_engine": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/engine/yolov8n_cls_tensorrt_fp16_1x3x640x640.engine",
+  "workspace_mb": 1024,
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "batch_size": 1,
+  "precision_label": "TensorRT FP16-enabled execution",
+  "fp16": true,
+  "int8": false,
+  "tf32": false,
+  "dla": false,
+  "dynamic_shapes": false,
+  "input_io_format": "fp32:chw",
+  "output_io_format": "fp32:chw",
+  "build_only": true,
+  "timing_cache": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/engine/timing_cache.bin",
+  "status": "PASS",
+  "build_start_epoch": 1784301130.189912,
+  "build_end_epoch": 1784301596.2750876,
+  "build_duration_seconds": 466.0851755142212,
+  "engine_size_bytes": 6524370,
+  "engine_sha256": "36f45951b9ea3b2699e562901b7a0ad61cbf239a75aa90167a50df3e1cfc4a8e",
+  "new_engine_created": true
+}

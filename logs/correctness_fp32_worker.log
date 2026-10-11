@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "backend": "FP32",
+  "shape": [
+    20,
+    3
+  ]
+}

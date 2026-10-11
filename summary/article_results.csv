@@ -1,0 +1,2 @@
+model,precision,images,accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,engine_latency_mean_ms,end_to_end_latency_mean_ms,engine_fps,transfer_inclusive_fps,pipeline_fps,wall_clock_fps,avg_power_tot_w,gross_energy_per_image_j,idle_corrected_energy_per_image_j
+YOLOv8n-cls,TensorRT FP16-enabled execution,261,0.8505747126436781,0.8800514002126906,0.7932497013142175,0.8245594939350425,0.8425163399631771,22.81140761539854,201.58743890804598,43.83771562281686,38.912557205536814,4.960626542093972,4.948252638475834,5.047261904761904,0.9904565276702247,0.36980305685910225

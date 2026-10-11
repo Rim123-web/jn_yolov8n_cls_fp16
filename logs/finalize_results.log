@@ -1,0 +1,389 @@
+FINALIZATION PASS
+{
+  "architecture": "YOLOv8n-cls",
+  "task": "classification",
+  "device": "NVIDIA Jetson Nano Developer Kit",
+  "precision": "TensorRT FP16-enabled execution",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "batch_size": 1,
+  "warmup_count": 10,
+  "measured_images": 261,
+  "metrics": {
+    "task": "classification",
+    "total_images": 261,
+    "correct": 222,
+    "incorrect": 39,
+    "accuracy": 0.8505747126436781,
+    "top5_accuracy": null,
+    "macro_precision": 0.8800514002126906,
+    "macro_recall": 0.7932497013142175,
+    "macro_f1": 0.8245594939350425,
+    "weighted_precision": 0.8564226837308039,
+    "weighted_recall": 0.8505747126436781,
+    "weighted_f1": 0.8425163399631771,
+    "per_class": [
+      {
+        "class_id": 0,
+        "class_name": "class_1_asymptomatic",
+        "support": 155,
+        "precision": 0.8296703296703297,
+        "recall": 0.9741935483870968,
+        "f1": 0.8961424332344214
+      },
+      {
+        "class_id": 1,
+        "class_name": "class_2_mild_symptoms",
+        "support": 70,
+        "precision": 0.875,
+        "recall": 0.6,
+        "f1": 0.711864406779661
+      },
+      {
+        "class_id": 2,
+        "class_name": "class_3_symptomatic_compromised",
+        "support": 36,
+        "precision": 0.9354838709677419,
+        "recall": 0.8055555555555556,
+        "f1": 0.8656716417910448
+      }
+    ],
+    "confusion_matrix": [
+      [
+        151,
+        4,
+        0
+      ],
+      [
+        26,
+        42,
+        2
+      ],
+      [
+        5,
+        2,
+        29
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        0.9741935483870968,
+        0.025806451612903226,
+        0.0
+      ],
+      [
+        0.37142857142857144,
+        0.6,
+        0.02857142857142857
+      ],
+      [
+        0.1388888888888889,
+        0.05555555555555555,
+        0.8055555555555556
+      ]
+    ],
+    "class_names": [
+      "class_1_asymptomatic",
+      "class_2_mild_symptoms",
+      "class_3_symptomatic_compromised"
+    ],
+    "precision": "TensorRT FP16-enabled execution",
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "batch_size": 1,
+    "historical_reference": {
+      "accuracy": 0.8505747126436781,
+      "macro_f1": 0.8245594939350424
+    },
+    "historical_match": {
+      "accuracy_difference": 0.0,
+      "macro_f1_difference": 1.1102230246251565e-16
+    }
+  },
+  "performance": {
+    "measured_images": 261,
+    "warmup_count": 10,
+    "mean_engine_latency_ms": 22.81140761539854,
+    "mean_transfer_inclusive_latency_ms": 25.698645162742256,
+    "mean_end_to_end_latency_ms": 201.58743890804598,
+    "engine_fps": 43.83771562281686,
+    "transfer_inclusive_fps": 38.912557205536814,
+    "latency_based_pipeline_fps": 4.960626542093972,
+    "official_measured_wall_time_seconds": 52.745892150000145,
+    "wall_clock_pipeline_fps": 4.948252638475834,
+    "engine_percentiles_ms": {
+      "p50": 21.62661361694336,
+      "p90": 21.72901153564453,
+      "p95": 25.38880157470703,
+      "p99": 54.15899047851491
+    },
+    "end_to_end_percentiles_ms": {
+      "p50": 103.094556,
+      "p90": 164.038506,
+      "p95": 216.045512,
+      "p99": 2339.0288763999934
+    },
+    "fps_definitions": {
+      "engine_fps": "1000 / mean TensorRT execution-only CUDA-event latency",
+      "transfer_inclusive_fps": "1000 / mean(H2D + TensorRT + D2H)",
+      "latency_based_pipeline_fps": "1000 / mean complete file-open-to-classification latency",
+      "wall_clock_pipeline_fps": "N / official measured process wall time"
+    }
+  },
+  "power_energy": {
+    "power_boundary": "Jetson module-level Power TOT (POM_5V_IN), not GPU-only power",
+    "monitor": "jtop/jetson-stats 4.3.2",
+    "interval_seconds": 0.5,
+    "active_sample_count": 84,
+    "idle_sample_count": 60,
+    "mean_power_tot_w": 5.047261904761904,
+    "median_power_tot_w": 5.177,
+    "min_power_tot_w": 3.982,
+    "max_power_tot_w": 6.355,
+    "p95_power_tot_w": 6.0682,
+    "gross_total_energy_j": 258.50915372192867,
+    "gross_energy_per_image_j": 0.9904565276702247,
+    "idle_mean_power_w": 3.07115,
+    "idle_corrected_total_energy_j": 96.5185978402257,
+    "idle_corrected_energy_per_image_j": 0.36980305685910225,
+    "images_per_gross_joule": 1.0096354277680653,
+    "images_per_idle_corrected_joule": 2.7041420600830985,
+    "integration": "trapezoidal integration over timestamped samples with boundary extension",
+    "warmup_energy_excluded": true
+  },
+  "resources": {
+    "avg_cpu_util_percent": 39.375,
+    "max_cpu_util_percent": 90.5,
+    "avg_gpu_util_percent": 12.095238095238095,
+    "max_gpu_util_percent": 99.7,
+    "avg_ram_used_mb": 3562.644484747024,
+    "max_ram_used_mb": 3591.5078125,
+    "avg_process_rss_mb": 2242.830543154762,
+    "max_process_rss_mb": 2266.546875
+  },
+  "temperature": {
+    "avg_max_sensor_temperature_c": 62.791666666666664,
+    "max_sensor_temperature_c": 64.5,
+    "throttling_event_count": 0,
+    "throttling_telemetry_note": "No explicit throttling flag was exposed by the preserved jtop monitor schema; no throttling event was observed or inferred."
+  },
+  "bottleneck": {
+    "main_bottleneck": {
+      "stage": "normalization/layout",
+      "mean_latency_ms": 119.2930151762452,
+      "median_latency_ms": 36.843132000000004,
+      "p95_ms": 43.843551,
+      "p99_ms": 1976.797529999987,
+      "accumulated_latency_ms": 31135.47696099998,
+      "share_of_end_to_end_percent": 59.1768097369701,
+      "bottleneck_rank": 1
+    },
+    "latency_outside_tensorrt_percent": 88.68411259205294,
+    "decoding_percent": 16.303859898740452,
+    "preprocessing_percent": 69.5964106250462,
+    "tensorrt_inference_percent": 11.31588740794706,
+    "transfers_percent": 1.432250721068355,
+    "postprocessing_percent": 0.4406037598672976,
+    "optimization_priority": "preprocessing/outside-engine path"
+  },
+  "confidence": {
+    "all": {
+      "count": 261,
+      "mean": 0.9194469908937212,
+      "median": 0.9810303845928916,
+      "std": 0.11948729145501244,
+      "min": 0.5187717789065299,
+      "max": 0.9999999918750032,
+      "p50": 0.9810303845928916,
+      "p90": 0.9997790835420879,
+      "p95": 0.9999410088191204,
+      "p99": 0.9999970549249574,
+      "coefficient_of_variation": 0.1299556066183526,
+      "accumulated": 239.97566462326122
+    },
+    "correct": {
+      "count": 222,
+      "mean": 0.9384700845815249,
+      "median": 0.9887699540181654,
+      "std": 0.10207975850348944,
+      "min": 0.5307405915197614,
+      "max": 0.9999999918750032,
+      "p50": 0.9887699540181654,
+      "p90": 0.9998651353158956,
+      "p95": 0.9999420824693775,
+      "p99": 0.9999983334380341,
+      "coefficient_of_variation": 0.10877252262016218,
+      "accumulated": 208.34035877709857
+    },
+    "incorrect": {
+      "count": 39,
+      "mean": 0.8111616883631458,
+      "median": 0.8586347677469851,
+      "std": 0.14982139201576894,
+      "min": 0.5187717789065299,
+      "max": 0.9999858308309415,
+      "p50": 0.8586347677469851,
+      "p90": 0.9808458201078635,
+      "p95": 0.9928467757715709,
+      "p99": 0.9979897772418904,
+      "coefficient_of_variation": 0.18469978817428565,
+      "accumulated": 31.635305846162684
+    },
+    "mean_confidence_correct": 0.9384700845815249,
+    "mean_confidence_incorrect": 0.8111616883631458
+  },
+  "model_artifact": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/model/yolov8n_cls_inference_only.pt",
+    "size_bytes": 2968712,
+    "modified_time": 1781360091.81498,
+    "sha256": "6b756b9724c65520f10586087e119afa6cccc28a258916390d5eb641b8f83a54"
+  },
+  "original_onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/onnx/yolov8n_cls_fp32_reference_source.onnx",
+    "size_bytes": 5772949,
+    "modified_time": 1784297689.3421538,
+    "sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c"
+  },
+  "onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/onnx/yolov8n_cls_source.onnx",
+    "size_bytes": 5772949,
+    "modified_time": 1784297689.3421538,
+    "sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c"
+  },
+  "engine": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/engine/yolov8n_cls_tensorrt_fp16_1x3x640x640.engine",
+    "size_bytes": 6524370,
+    "modified_time": 1784301583.6376166,
+    "sha256": "36f45951b9ea3b2699e562901b7a0ad61cbf239a75aa90167a50df3e1cfc4a8e"
+  },
+  "cross_model_comparison": {
+    "status": "PASS_WITH_DOCUMENTED_NATIVE_PREPROCESSING_DIFFERENCE",
+    "rows": [
+      {
+        "architecture": "ResNet50",
+        "accuracy": 0.9770114942528736,
+        "macro_f1": 0.9584802193497846,
+        "engine_latency_ms": 187.14831852821555,
+        "engine_fps": 5.343355515370202,
+        "end_to_end_latency_ms": 273.36316818390804,
+        "pipeline_fps": 3.658137292757886,
+        "wall_clock_fps": 3.652760740085841,
+        "average_power_w": 7.59872027972028,
+        "gross_energy_per_image_j": 2.087188965526121,
+        "idle_corrected_energy_per_image_j": 1.2982878890585627,
+        "avg_cpu_percent": 38.55769230769231,
+        "avg_gpu_percent": 70.07412587412587,
+        "max_ram_mb": 2388.046875,
+        "max_temperature_c": 59.5,
+        "engine_size_bytes": 78958604,
+        "reference_package": "/home/jetson/Downloads/classification_benchmark/resnet50_final/resnet50_tensorrt_fp16_640x640_batch1_warmup10_20260716_201533"
+      },
+      {
+        "architecture": "MobileNetV3-Small",
+        "accuracy": 0.9731800766283525,
+        "macro_f1": 0.9518572587185726,
+        "engine_latency_ms": 27.178162899967354,
+        "engine_fps": 36.79424557431,
+        "end_to_end_latency_ms": 114.5635332605364,
+        "pipeline_fps": 8.728781066186523,
+        "wall_clock_fps": 8.697467801249324,
+        "average_power_w": 5.034416666666667,
+        "gross_energy_per_image_j": 0.5806085274374806,
+        "idle_corrected_energy_per_image_j": 0.2730687976717036,
+        "avg_cpu_percent": 33.05416666666667,
+        "avg_gpu_percent": 12.69,
+        "max_ram_mb": 2497.8828125,
+        "max_temperature_c": 44.0,
+        "engine_size_bytes": 6320802,
+        "reference_package": "/home/jetson/Downloads/classification_benchmark/mobileNet_v3_small/mobilenet_v3_small_tensorrt_fp16_640x640_batch1_warmup10_20260717_142206"
+      },
+      {
+        "architecture": "YOLOv8n-cls",
+        "accuracy": 0.8505747126436781,
+        "macro_f1": 0.8245594939350425,
+        "engine_latency_ms": 22.81140761539854,
+        "engine_fps": 43.83771562281686,
+        "end_to_end_latency_ms": 201.58743890804598,
+        "pipeline_fps": 4.960626542093972,
+        "wall_clock_fps": 4.948252638475834,
+        "average_power_w": 5.047261904761904,
+        "gross_energy_per_image_j": 0.9904565276702247,
+        "idle_corrected_energy_per_image_j": 0.36980305685910225,
+        "avg_cpu_percent": 39.375,
+        "avg_gpu_percent": 12.095238095238095,
+        "max_ram_mb": 3591.5078125,
+        "max_temperature_c": 64.5,
+        "engine_size_bytes": 6524370,
+        "reference_package": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948"
+      }
+    ],
+    "yolov8n_cls_vs_resnet50": {
+      "accuracy_difference": -0.12643678160919547,
+      "macro_f1_difference": -0.1339207254147421,
+      "engine_speedup": 8.20415476692826,
+      "pipeline_speedup": 1.3560525877239926,
+      "gross_energy_change_percent": -52.54591011980754
+    },
+    "yolov8n_cls_vs_mobilenet_v3_small": {
+      "accuracy_difference": -0.12260536398467436,
+      "macro_f1_difference": -0.12729776478353017,
+      "engine_speedup": 1.1914285763593604,
+      "pipeline_speedup": 0.5683069038482824,
+      "gross_energy_change_percent": 70.58938697328661
+    }
+  },
+  "fp32_vs_fp16_comparison": {
+    "status": "PASS",
+    "rows": [
+      {
+        "precision": "FP32",
+        "accuracy": 0.8505747126436781,
+        "macro_f1": 0.8245594939350425,
+        "engine_latency_ms": 32.63509513591898,
+        "engine_fps": 30.641859502329922,
+        "transfer_inclusive_fps": 26.948247911299447,
+        "end_to_end_latency_ms": 257.27082775095784,
+        "pipeline_fps": 3.8869544936047533,
+        "wall_clock_fps": 3.8766468707405197,
+        "average_power_w": 7.058466019417476,
+        "gross_energy_per_image_j": 1.766836412721667,
+        "idle_corrected_energy_per_image_j": 0.3186236908707124,
+        "engine_size_bytes": 12211392
+      },
+      {
+        "precision": "FP16-enabled",
+        "accuracy": 0.8505747126436781,
+        "macro_f1": 0.8245594939350425,
+        "engine_latency_ms": 22.81140761539854,
+        "engine_fps": 43.83771562281686,
+        "transfer_inclusive_fps": 38.912557205536814,
+        "end_to_end_latency_ms": 201.58743890804598,
+        "pipeline_fps": 4.960626542093972,
+        "wall_clock_fps": 4.948252638475834,
+        "average_power_w": 5.047261904761904,
+        "gross_energy_per_image_j": 0.9904565276702247,
+        "idle_corrected_energy_per_image_j": 0.36980305685910225,
+        "engine_size_bytes": 6524370
+      }
+    ],
+    "prediction_agreement": 1,
+    "accuracy_difference_fp16_minus_fp32": 0.0,
+    "macro_f1_difference_fp16_minus_fp32": 0.0,
+    "fp16_engine_speedup": 1.43064801989199,
+    "fp16_pipeline_speedup": 1.276224496647888,
+    "engine_fps_change_percent": 43.064801989199,
+    "pipeline_fps_change_percent": 27.622449664788775,
+    "gross_energy_change_percent": -43.94180918285991,
+    "idle_corrected_energy_change_percent": 16.062636726268064,
+    "engine_size_change_percent": -46.57144738290279,
+    "reference_package": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313"
+  }
+}

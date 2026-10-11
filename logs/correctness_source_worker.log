@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/scripts/correctness_source_worker.py", line 59, in <module>
+    main()
+  File "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/scripts/correctness_source_worker.py", line 45, in main
+    raise RuntimeError(
+RuntimeError: Non-finite source output for /home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525115549_0011_RGB_10.JPG: [nan, nan, nan]; input_min=0.0, input_max=1.0, input_mean=0.41968971490859985

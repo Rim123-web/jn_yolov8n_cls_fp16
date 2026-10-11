@@ -1,0 +1,18 @@
+{
+  "status": "PASS_EXACT_FP32_ONNX_REUSED",
+  "fp32_reference": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313",
+  "selected_onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313/onnx/yolov8n_cls_source.onnx",
+    "size_bytes": 5772949,
+    "modified_time": 1784297689.3421538,
+    "sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c"
+  },
+  "packaged_onnx": {
+    "path": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/onnx/yolov8n_cls_source.onnx",
+    "size_bytes": 5772949,
+    "modified_time": 1784297689.3421538,
+    "sha256": "341afc3adf731e3ff5ac1ccc0c5893d6eed45eca47d9eb80d536ddcbde48ea1c"
+  },
+  "copy_hash_matches": true,
+  "reason": "No ONNX export or graph rewrite; exact validated static ONNX from FP32 was copied byte-for-byte."
+}

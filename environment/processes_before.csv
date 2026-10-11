@@ -1,0 +1,2 @@
+pid,ppid,elapsed_s,cpu,memory,command
+33460,33456,1,0.0,0.0,"bash -c set -e RUN=/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948 mkdir -p ""$RUN/logs"" PY=/home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python cd ""$RUN"" PYTHONNOUSERSITE=1 ""$PY"" scripts/prepare_project.py > logs/preparation.log 2>&1 cat logs/preparation.log sha256sum model/yolov8n_cls_inference_only.pt onnx/yolov8n_cls_source.onnx cat validation/fp32_fp16_protocol_precheck.json cat validation/fp32_fp16_dataset_parity.json"

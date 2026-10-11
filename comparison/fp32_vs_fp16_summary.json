@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "precision": "FP32",
+      "accuracy": 0.8505747126436781,
+      "macro_f1": 0.8245594939350425,
+      "engine_latency_ms": 32.63509513591898,
+      "engine_fps": 30.641859502329922,
+      "transfer_inclusive_fps": 26.948247911299447,
+      "end_to_end_latency_ms": 257.27082775095784,
+      "pipeline_fps": 3.8869544936047533,
+      "wall_clock_fps": 3.8766468707405197,
+      "average_power_w": 7.058466019417476,
+      "gross_energy_per_image_j": 1.766836412721667,
+      "idle_corrected_energy_per_image_j": 0.3186236908707124,
+      "engine_size_bytes": 12211392
+    },
+    {
+      "precision": "FP16-enabled",
+      "accuracy": 0.8505747126436781,
+      "macro_f1": 0.8245594939350425,
+      "engine_latency_ms": 22.81140761539854,
+      "engine_fps": 43.83771562281686,
+      "transfer_inclusive_fps": 38.912557205536814,
+      "end_to_end_latency_ms": 201.58743890804598,
+      "pipeline_fps": 4.960626542093972,
+      "wall_clock_fps": 4.948252638475834,
+      "average_power_w": 5.047261904761904,
+      "gross_energy_per_image_j": 0.9904565276702247,
+      "idle_corrected_energy_per_image_j": 0.36980305685910225,
+      "engine_size_bytes": 6524370
+    }
+  ],
+  "prediction_agreement": 1,
+  "accuracy_difference_fp16_minus_fp32": 0.0,
+  "macro_f1_difference_fp16_minus_fp32": 0.0,
+  "fp16_engine_speedup": 1.43064801989199,
+  "fp16_pipeline_speedup": 1.276224496647888,
+  "engine_fps_change_percent": 43.064801989199,
+  "pipeline_fps_change_percent": 27.622449664788775,
+  "gross_energy_change_percent": -43.94180918285991,
+  "idle_corrected_energy_change_percent": 16.062636726268064,
+  "engine_size_change_percent": -46.57144738290279,
+  "reference_package": "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp32_640x640_batch1_warmup10_20260717_161313"
+}

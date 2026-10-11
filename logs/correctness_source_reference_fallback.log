@@ -1,0 +1,11 @@
+Current isolated CPU PyTorch validation failed and was not accepted as a fresh source run.
+The exact source outputs from the immutable validated FP32 package were reused only after model, ONNX, dataset, and preprocessing parity gates passed.
+Original worker error:
+Correctness worker failed with rc=1: /home/jetson/Downloads/jetson_nano/.venv_yolo/bin/python /home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/scripts/correctness_source_worker.py --indices [0, 14, 27, 41, 55, 68, 82, 96, 109, 123, 137, 151, 164, 178, 192, 205, 219, 233, 246, 260] --output /home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/validation/correctness_worker_outputs/source.npy
+Traceback (most recent call last):
+  File "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/scripts/correctness_source_worker.py", line 59, in <module>
+    main()
+  File "/home/jetson/Downloads/classification_benchmark/yolov8n-cls/yolov8n_cls_tensorrt_fp16_640x640_batch1_warmup10_20260717_170948/scripts/correctness_source_worker.py", line 45, in main
+    raise RuntimeError(
+RuntimeError: Non-finite source output for /home/jetson/Downloads/classification_jetson/test_imgs/class_1_asymptomatic/DJI_20240525115549_0011_RGB_10.JPG: [nan, nan, nan]; input_min=0.0, input_max=1.0, input_mean=0.41968971490859985
+
